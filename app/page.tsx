@@ -1,3 +1,4 @@
+import Cursor from "@/components/Cursor";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Certificates from "@/components/Certificates";

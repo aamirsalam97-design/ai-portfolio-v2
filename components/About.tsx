@@ -1,7 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { Brain, Code2, Database, Sparkles } from "lucide-react";
+import {
+    Brain,
+    Code2,
+    Database,
+    Sparkles,
+    CheckCircle,
+} from "lucide-react";
 
 const features = [
     {
@@ -34,112 +41,160 @@ export default function About() {
         >
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Heading */}
+                <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: .7 }}
-                    viewport={{ once: true }}
-                    className="text-center"
-                >
+                    {/* LEFT */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -60 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="relative"
+                    >
 
-                    <p className="text-cyan-400 font-semibold tracking-widest uppercase">
-                        About Me
-                    </p>
+                        <div className="relative rounded-3xl overflow-hidden border border-cyan-500/30">
 
-                    <h2 className="text-5xl font-bold mt-4">
-                        Passionate AI Engineer
-                    </h2>
+                            <Image
+                                src="/images/profile.jpg"
+                                alt="MOHD AAMIR SALAM"
+                                width={500}
+                                height={600}
+                                className="w-full object-cover"
+                            />
 
-                    <p className="max-w-3xl mx-auto mt-8 text-gray-400 leading-8 text-lg">
+                        </div>
 
-                        I'm <span className="text-white font-semibold">MOHD AAMIR SALAM</span>,
-                        an AI-focused Computer Science graduate passionate about
-                        Machine Learning, Data Science, Deep Learning and Generative AI.
+                        <div className="absolute -bottom-8 -right-8 bg-slate-900 border border-cyan-500 rounded-2xl px-8 py-6 shadow-2xl">
 
-                        <br /><br />
-
-                        I enjoy solving real-world problems by building intelligent
-                        applications using Python, Scikit-Learn, OpenCV,
-                        SQL, Next.js and modern AI technologies.
-
-                        My goal is to become a professional
-                        AI / Machine Learning Engineer while contributing
-                        to impactful products.
-
-                    </p>
-
-                </motion.div>
-
-                {/* Stats */}
-
-                <div className="grid md:grid-cols-4 gap-8 mt-20">
-
-                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center hover:border-cyan-500 transition">
-                        <h3 className="text-5xl font-bold text-cyan-400">15+</h3>
-                        <p className="mt-3 text-gray-400">
-                            Projects Completed
-                        </p>
-                    </div>
-
-                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center hover:border-cyan-500 transition">
-                        <h3 className="text-5xl font-bold text-cyan-400">6+</h3>
-                        <p className="mt-3 text-gray-400">
-                            AI Applications
-                        </p>
-                    </div>
-
-                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center hover:border-cyan-500 transition">
-                        <h3 className="text-5xl font-bold text-cyan-400">8+</h3>
-                        <p className="mt-3 text-gray-400">
-                            Certifications
-                        </p>
-                    </div>
-
-                    <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 text-center hover:border-cyan-500 transition">
-                        <h3 className="text-5xl font-bold text-cyan-400">2025</h3>
-                        <p className="mt-3 text-gray-400">
-                            B.Tech Graduate
-                        </p>
-                    </div>
-
-                </div>
-
-                {/* Cards */}
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24">
-
-                    {features.map((item, index) => (
-
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: .6, delay: index * .15 }}
-                            viewport={{ once: true }}
-                            className="bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-cyan-400 hover:-translate-y-2 transition-all duration-300"
-                        >
-
-                            <div className="mb-6">
-                                {item.icon}
-                            </div>
-
-                            <h3 className="text-2xl font-bold mb-4">
-                                {item.title}
+                            <h3 className="text-4xl font-bold text-cyan-400">
+                                15+
                             </h3>
 
-                            <p className="text-gray-400 leading-7">
-                                {item.desc}
+                            <p className="text-gray-300">
+                                Projects Completed
                             </p>
 
-                        </motion.div>
+                        </div>
 
-                    ))}
+                    </motion.div>
+
+                    {/* RIGHT */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 60 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                    >
+
+                        <p className="text-cyan-400 uppercase tracking-[5px] font-semibold">
+                            About Me
+                        </p>
+
+                        <h2 className="text-5xl font-bold mt-5 leading-tight">
+                            Building AI Products That Solve
+                            <span className="text-cyan-400"> Real Problems.</span>
+                        </h2>
+
+                        <p className="text-gray-400 mt-8 leading-8 text-lg">
+                            I'm{" "}
+                            <span className="text-white font-semibold">
+                                MOHD AAMIR SALAM
+                            </span>
+                            , an AI-focused Computer Science graduate passionate about
+                            Machine Learning, Deep Learning, Computer Vision,
+                            Data Science and Generative AI.
+                        </p>
+
+                        <p className="text-gray-400 mt-6 leading-8">
+                            I build intelligent applications using Python,
+                            Scikit-Learn, OpenCV, SQL, Streamlit,
+                            Next.js and modern AI technologies with a focus
+                            on solving real-world problems.
+                        </p>
+                        <div className="mt-10 space-y-4">
+
+                            <div className="flex items-center gap-3">
+                                <CheckCircle className="w-6 h-6 text-cyan-400" />
+                                <span>AI / Machine Learning Engineer</span>
+                            </div>
+
+                            <div className="flex items-center gap-3">
+                                <CheckCircle className="w-6 h-6 text-cyan-400" />
+                                <span>15+ Real World Projects</span>
+                            </div>
+
+                            <div className="flex items-center gap-3">
+                                <CheckCircle className="w-6 h-6 text-cyan-400" />
+                                <span>Python • Machine Learning • GenAI</span>
+                            </div>
+
+                            <div className="flex items-center gap-3">
+                                <CheckCircle className="w-6 h-6 text-cyan-400" />
+                                <span>Open to AI/ML Internship Opportunities</span>
+                            </div>
+
+                        </div>
+
+                        <div className="grid grid-cols-2 gap-6 mt-12">
+
+                            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 text-center">
+                                <h3 className="text-4xl font-bold text-cyan-400">15+</h3>
+                                <p className="mt-2 text-gray-400">Projects</p>
+                            </div>
+
+                            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 text-center">
+                                <h3 className="text-4xl font-bold text-cyan-400">6+</h3>
+                                <p className="mt-2 text-gray-400">AI Apps</p>
+                            </div>
+
+                            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 text-center">
+                                <h3 className="text-4xl font-bold text-cyan-400">8+</h3>
+                                <p className="mt-2 text-gray-400">Certificates</p>
+                            </div>
+
+                            <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6 text-center">
+                                <h3 className="text-4xl font-bold text-cyan-400">2025</h3>
+                                <p className="mt-2 text-gray-400">Graduate</p>
+                            </div>
+
+                        </div>
+
+                    </motion.div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24">
+
+                        {features.map((item, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{
+                                    duration: 0.6,
+                                    delay: index * 0.15,
+                                }}
+                                viewport={{ once: true }}
+                                whileHover={{ y: -8 }}
+                                className="bg-slate-900 border border-slate-800 rounded-3xl p-8 hover:border-cyan-400 transition-all duration-300"
+                            >
+                                <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 flex items-center justify-center mb-6">
+                                    {item.icon}
+                                </div>
+
+                                <h3 className="text-2xl font-bold mb-4">
+                                    {item.title}
+                                </h3>
+
+                                <p className="text-gray-400 leading-7">
+                                    {item.desc}
+                                </p>
+                            </motion.div>
+                        ))}
+
+                    </div>
 
                 </div>
 
             </div>
+
         </section>
     );
 }

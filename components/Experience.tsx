@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const timeline = [
     {
-        year: "2021 - 2025",
+        year: "2022 - 2025",
         title: "B.Tech - Computer Science & Engineering (AI)",
         company: "Galgotias University",
         description:

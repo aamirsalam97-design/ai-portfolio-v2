@@ -15,7 +15,8 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative min-h-screen bg-[#020617] text-white overflow-hidden flex items-center"
+            className="relative min-h-screen pt-24 bg-[#020617] text-white overflow-hidden flex items-center"
+
         >
             {/* Background */}
             <div className="absolute inset-0 -z-10">
@@ -44,7 +45,10 @@ export default function Hero() {
 
                         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
 
-                        OPEN TO AI/ML INTERNSHIPS • INDIA
+                        🟢 OPEN TO AI/ML INTERNSHIPS • INDIA
+                        <p className="mt-4 text-cyan-400 font-medium">
+                            AI Engineer • Generative AI • Computer Vision
+                        </p>
 
                     </div>
 
@@ -90,9 +94,7 @@ export default function Hero() {
 
                     <p className="mt-8 max-w-2xl text-gray-300 text-lg leading-9">
 
-                        AI-focused Computer Science graduate with hands-on experience
-                        in Machine Learning, Data Analysis, Python, SQL, and
-                        Generative AI.
+                        I build AI-powered applications using Gemini AI, YOLOv8, OpenCV and Machine Learning. My focus is solving real business problems through Computer Vision, Generative AI and automation
 
                         <br />
                         <br />

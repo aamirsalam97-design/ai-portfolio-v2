@@ -18,13 +18,14 @@ export default function FeaturedProject() {
                     </p>
 
                     <h2 className="text-5xl font-bold mt-4">
-                        AI Cyber Security Assistant
+                        Instagram AI Studio
                     </h2>
 
                     <p className="text-gray-400 mt-6 max-w-3xl mx-auto">
-                        An AI-powered cyber security platform that combines
-                        Machine Learning, Generative AI and real-time security
-                        analysis into one intelligent application.
+                        An AI-powered web application that helps content creators
+                        generate captions, hashtags, analyze images, predict
+                        engagement, and optimize Instagram content using
+                        Gemini AI and YOLOv8.
                     </p>
 
                 </div>
@@ -39,8 +40,8 @@ export default function FeaturedProject() {
                     >
 
                         <Image
-                            src="/projects/cyber.png"
-                            alt="AI Cyber Security Assistant"
+                            src="/projects/instagram-ai-studio.png"
+                            alt="Instagram AI Studio"
                             width={700}
                             height={450}
                             className="rounded-3xl border border-cyan-500/30 shadow-2xl"
@@ -54,34 +55,36 @@ export default function FeaturedProject() {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
+
                         <span className="inline-block px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-400 text-sm font-semibold">
-                            ⭐ Best AI Project
+                            🚀 Latest AI Project
                         </span>
 
                         <h3 className="text-4xl font-bold mt-6 leading-tight">
-                            Intelligent AI Platform for
+                            AI-Powered Platform for
                             <span className="text-cyan-400">
-                                {" "}Cyber Security
+                                {" "}Instagram Content Creation
                             </span>
                         </h3>
 
                         <p className="text-gray-400 leading-8 mt-8">
-                            AI Cyber Security Assistant is an intelligent platform
-                            built using Machine Learning, Python and Gemini AI.
-                            It helps users detect phishing URLs, analyze password
-                            strength, identify suspicious emails and interact with
-                            an AI chatbot for cyber security guidance.
+                            Instagram AI Studio is an AI-powered platform built
+                            with Flask, Gemini AI, YOLOv8, and OpenCV. It helps
+                            creators analyze images, generate engaging captions
+                            and hashtags, predict engagement, perform sentiment
+                            analysis, create AI-powered replies, and improve
+                            Instagram content through one intelligent dashboard.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 mt-10">
 
                             <div className="rounded-2xl bg-slate-900 border border-slate-800 p-5">
                                 <h4 className="text-cyan-400 font-bold">
-                                    Machine Learning
+                                    YOLOv8 + OpenCV
                                 </h4>
 
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Phishing URL Detection
+                                    Object Detection & Image Analysis
                                 </p>
                             </div>
 
@@ -91,48 +94,87 @@ export default function FeaturedProject() {
                                 </h4>
 
                                 <p className="text-gray-400 text-sm mt-2">
-                                    AI Security Assistant
+                                    Caption & Hashtag Generation
                                 </p>
                             </div>
 
                             <div className="rounded-2xl bg-slate-900 border border-slate-800 p-5">
                                 <h4 className="text-cyan-400 font-bold">
-                                    Streamlit
+                                    Flask
                                 </h4>
 
                                 <p className="text-gray-400 text-sm mt-2">
-                                    Interactive Dashboard
+                                    Full-Stack Web Application
                                 </p>
                             </div>
 
                             <div className="rounded-2xl bg-slate-900 border border-slate-800 p-5">
                                 <h4 className="text-cyan-400 font-bold">
-                                    Accuracy
+                                    AI Analytics
                                 </h4>
 
                                 <p className="text-gray-400 text-sm mt-2">
-                                    85.8% ML Model
+                                    Engagement Prediction
                                 </p>
                             </div>
 
                         </div>
 
+                        <div className="flex flex-wrap gap-3 mt-10">
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                Python
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                Flask
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                Gemini AI
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                YOLOv8
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                OpenCV
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                HTML
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                CSS
+                            </span>
+
+                            <span className="px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-sm">
+                                JavaScript
+                            </span>
+
+                        </div>
+
                         <div className="flex flex-wrap gap-4 mt-10">
+
                             <a
-                                href="https://ai-cyber-security-assistant-kbwxcjxbtjdbxdpghhan2g.streamlit.app/"
+                                href="https://example.com"
                                 target="_blank"
-                                className="px-8 py-4 rounded-xl bg-cyan-500 hover:bg-cyan-400 transition font-semibold text-black"
+                                rel="noopener noreferrer"
                             >
                                 Live Demo
                             </a>
 
                             <a
-                                href="https://github.com/aamirsalam97-design"
+                                href="https://github.com"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 className="px-8 py-4 rounded-xl border border-cyan-500 hover:bg-cyan-500/10 transition font-semibold"
                             >
                                 GitHub
                             </a>
+
                         </div>
 
                     </motion.div>

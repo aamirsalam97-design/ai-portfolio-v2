@@ -5,24 +5,38 @@ import { motion } from "framer-motion";
 const timeline = [
     {
         year: "2022 - 2025",
-        title: "B.Tech - Computer Science & Engineering (AI)",
+        title: "B.Tech - Computer Science & Engineering (Artificial Intelligence)",
         company: "Galgotias University",
         description:
-            "Completed B.Tech with specialization in Artificial Intelligence. Learned Machine Learning, Data Structures, DBMS, Operating Systems, Cloud Computing and Software Engineering.",
+            "Completed B.Tech with specialization in Artificial Intelligence. Studied Machine Learning, Data Structures, DBMS, Operating Systems, Cloud Computing and Software Engineering. Built multiple AI-powered applications using Python, Machine Learning and Generative AI.",
+    },
+    {
+        year: "2020 - 2022",
+        title: "Diploma in Computer Science Engineering",
+        company: "Galgotias College of Engineering & Technology (GCET) / Galgotias University Polytechnic",
+        description:
+            "Completed Diploma in Computer Science Engineering with a CGPA of 7.9/10. Built a strong foundation in Programming, C, C++, Data Structures, DBMS, Web Development and Software Engineering.",
+    },
+    {
+        year: "2017",
+        title: "Secondary School (Class X)",
+        company: "R.K. Public School, Kithore Garh Road, Meerut",
+        description:
+            "Board: SBSE • CGPA: 8.7/10. Developed a strong academic foundation in Mathematics, Science and Computer Fundamentals.",
     },
     {
         year: "2025",
         title: "AI/ML Projects",
         company: "Personal Portfolio",
         description:
-            "Built AI Cyber Security Assistant, Fake News Detection, House Price Prediction, AI Hand Controller and AI Trip Planner using Python, Machine Learning and Generative AI.",
+            "Developed Instagram AI Studio, YOLO Vision AI, AI Cyber Security Assistant, Fake News Detection, House Price Prediction, AI Hand Controller, AI Trip Planner and Face Attendance System using Python, Machine Learning, Computer Vision and Generative AI.",
     },
     {
         year: "2025",
-        title: "Internship & Learning",
-        company: "Professional Development",
+        title: "Internship & Professional Learning",
+        company: "Self Learning & Professional Development",
         description:
-            "Focused on AI, Python, Machine Learning, Full Stack Development, Git, GitHub and real-world project deployment using Streamlit and Vercel.",
+            "Focused on Artificial Intelligence, Python, Machine Learning, Computer Vision, Generative AI, Full Stack Development, Git, GitHub and deployment using Streamlit, Vercel and modern AI technologies.",
     },
 ];
 
@@ -44,7 +58,7 @@ export default function Experience() {
                     </h2>
 
                     <p className="text-gray-400 mt-5 max-w-3xl mx-auto">
-                        My academic journey and professional growth in Artificial Intelligence and Software Development.
+                        My academic journey and professional growth in Artificial Intelligence, Machine Learning and Software Development.
                     </p>
                 </div>
 

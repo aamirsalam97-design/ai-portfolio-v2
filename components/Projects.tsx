@@ -2,106 +2,72 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
-        title: "AI Hand Controller",
-        image: "/projects/handcontroller.png",
+        title: "Instagram AI Studio",
+        image: "/projects/instagram-ai-studio.png",
         description:
-            "An AI-powered Computer Vision application that detects hand gestures in real time using OpenCV and MediaPipe, allowing users to control games and applications through natural hand movements.",
-        tech: [
-            "Python",
-            "OpenCV",
-            "MediaPipe",
-            "Computer Vision",
-            "PyAutoGUI",
-        ],
-        github: "https://github.com/aamirsalam97-design/AI-Hand-Controller",
-        live: "#", // Add YouTube Demo Link Here
-        badge: "FEATURED",
+            "AI-powered Instagram content creation platform with image analysis, AI caption generation, hashtag generation, engagement prediction and sentiment analysis using Gemini AI and YOLOv8.",
+        github: "https://lnkd.in/gS9FV79i",
+        live: "https://lnkd.in/g4psucFz",
     },
-
+    {
+        title: "YOLO Vision AI",
+        image: "/projects/yolo-vision-ai.png",
+        description:
+            "Real-time object detection system using YOLOv8 and OpenCV with webcam support and live predictions.",
+        github: "https://lnkd.in/givENW74",
+        live: "https://lnkd.in/gFZzvEyJ",
+    },
     {
         title: "AI Cyber Security Assistant",
-        image: "/projects/cybersecurity.png",
+        image: "/projects/cyber-security.png",
         description:
-            "AI-powered cyber security platform featuring phishing detection, password strength analysis, AI chatbot assistance, and interactive security tools.",
-        tech: [
-            "Python",
-            "Machine Learning",
-            "Streamlit",
-            "Gemini AI",
-        ],
-        github: "https://github.com/aamirsalam97-design",
-        live:
-            "https://ai-cyber-security-assistant-kbwxcjxbtjdbxdpghhan2g.streamlit.app/",
-        badge: "LIVE",
+            "AI-powered cyber security platform featuring phishing detection, password strength analysis and AI chatbot.",
+        github: "https://lnkd.in/gFuuinMj",
+        live: "https://lnkd.in/g_PcWmsp",
     },
-
+    {
+        title: "AI Hand Controller",
+        image: "/projects/hand-controller.png",
+        description:
+            "Computer Vision project using OpenCV and MediaPipe for hand gesture recognition.",
+        github: "https://lnkd.in/geF6ncHz",
+        live: "",
+    },
     {
         title: "Fake News Detection",
-        image: "/projects/fakenews.png",
+        image: "/projects/fake-news.png",
         description:
-            "Machine Learning project that classifies news articles as real or fake using NLP techniques and Scikit-Learn models.",
-        tech: [
-            "Python",
-            "NLP",
-            "Scikit-Learn",
-            "Machine Learning",
-        ],
-        github: "https://github.com/aamirsalam97-design",
-        live: "#",
-        badge: "ML",
+            "Machine Learning project that classifies news articles using NLP and Scikit-Learn.",
+        github: "https://lnkd.in/gx37hQSU",
+        live: "https://lnkd.in/gh7cZnpi",
     },
-
     {
         title: "House Price Prediction",
-        image: "/projects/houseprice.png",
+        image: "/projects/house-price.png",
         description:
-            "Regression-based Machine Learning model that predicts house prices using cleaned datasets and feature engineering techniques.",
-        tech: [
-            "Python",
-            "Regression",
-            "Pandas",
-            "Scikit-Learn",
-        ],
-        github:
-            "https://github.com/aamirsalam97-design/House-Price-Prediction-ML",
-        live: "https://house-price-prediction.streamlit.app/",
-        badge: "LIVE",
+            "Regression-based Machine Learning model for predicting house prices.",
+        github: "https://lnkd.in/g8hxECZ3",
+        live: "https://lnkd.in/gkUqmDPK",
     },
-
     {
         title: "AI Trip Planner",
-        image: "/projects/tripplanner.png",
+        image: "/projects/trip-planner.png",
         description:
-            "Smart AI travel planner that generates personalized travel itineraries and destination recommendations using Gemini AI.",
-        tech: [
-            "Next.js",
-            "Gemini AI",
-            "Tailwind CSS",
-            "JavaScript",
-        ],
-        github:
-            "https://github.com/aamirsalam97-design/AI-Trip-Planner",
-        live: "#",
-        badge: "AI",
+            "AI-powered travel planner that generates personalized travel itineraries.",
+        github: "",
+        live: "",
     },
-
     {
-        title: "AI Attendance System",
+        title: "Student Attendance Tracker",
         image: "/projects/attendance.png",
         description:
-            "AI-powered attendance management system using face recognition and Computer Vision for automated student attendance.",
-        tech: [
-            "Python",
-            "OpenCV",
-            "Face Recognition",
-            "Machine Learning",
-        ],
-        github: "https://github.com/aamirsalam97-design",
-        live: "#",
-        badge: "PROJECT",
+            "Attendance management application built using Thunkable AI.",
+        github: "",
+        live: "",
     },
 ];
 
@@ -109,14 +75,18 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="py-28 bg-slate-950 text-white"
+            className="py-24 bg-slate-900 text-white"
         >
             <div className="max-w-7xl mx-auto px-6">
 
-                {/* Heading */}
-                <div className="text-center mb-16">
-
-                    <p className="uppercase tracking-[5px] text-cyan-400 font-semibold">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    viewport={{ once: true }}
+                    className="text-center mb-16"
+                >
+                    <p className="text-cyan-400 uppercase tracking-widest">
                         Portfolio
                     </p>
 
@@ -124,101 +94,64 @@ export default function Projects() {
                         Featured Projects
                     </h2>
 
-                    <p className="text-gray-400 mt-6 max-w-2xl mx-auto">
-                        A collection of my Artificial Intelligence, Machine Learning,
-                        Computer Vision and Full Stack Development projects.
+                    <p className="text-gray-400 mt-6 max-w-3xl mx-auto">
+                        Some of my best AI, Machine Learning and Full Stack projects.
                     </p>
+                </motion.div>
 
-                </div>
-
-                {/* Project Cards */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     {projects.map((project, index) => (
                         <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 40 }}
+                            key={project.title}
+                            initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{
-                                duration: 0.6,
-                                delay: index * 0.12,
-                            }}
+                            transition={{ delay: index * 0.1 }}
                             viewport={{ once: true }}
-                            whileHover={{
-                                y: -10,
-                                scale: 1.02,
-                            }}
-                            className="overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 hover:border-cyan-400 transition-all duration-300 shadow-lg hover:shadow-cyan-500/20"
+                            className="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-cyan-400 transition duration-300"
                         >
+                            <Image
+                                src={project.image}
+                                alt={project.title}
+                                width={600}
+                                height={350}
+                                className="w-full h-52 object-cover"
+                            />
 
-                            {/* Image */}
-                            <div className="relative">
-
-                                <Image
-                                    src={project.image}
-                                    alt={project.title}
-                                    width={600}
-                                    height={400}
-                                    className="w-full h-56 object-cover"
-                                />
-
-                                <span className="absolute top-4 left-4 bg-cyan-500 text-black text-xs font-bold px-3 py-1 rounded-full">
-                                    {project.badge}
-                                </span>
-
-                            </div>
-
-                            {/* Content */}
                             <div className="p-6">
 
                                 <h3 className="text-2xl font-bold mb-3">
                                     {project.title}
                                 </h3>
 
-                                <p className="text-gray-400 leading-7 mb-5">
+                                <p className="text-gray-400 mb-6">
                                     {project.description}
                                 </p>
 
-                                {/* Tech Stack */}
-                                <div className="flex flex-wrap gap-2 mb-6">
-                                    {project.tech.map((tech) => (
-                                        <span
-                                            key={tech}
-                                            className="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-sm"
+                                <div className="flex gap-3">
+
+                                    {project.github && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex-1 flex justify-center items-center gap-2 border border-cyan-400 rounded-lg py-3 hover:bg-cyan-500 hover:text-black transition"
                                         >
-                                            {tech}
-                                        </span>
-                                    ))}
-                                </div>
+                                            <FaGithub />
+                                            GitHub
+                                        </a>
+                                    )}
 
-                                {/* Buttons */}
-                                <div className="flex gap-4">
-
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex-1 text-center py-3 rounded-xl border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black transition"
-                                    >
-                                        GitHub
-                                    </a>
-
-                                    {project.live !== "#" ? (
+                                    {project.live && (
                                         <a
                                             href={project.live}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex-1 text-center py-3 rounded-xl bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition"
+                                            className="flex-1 flex justify-center items-center gap-2 bg-cyan-500 text-black rounded-lg py-3 hover:bg-cyan-400 transition"
                                         >
+                                            <FaExternalLinkAlt />
                                             Live Demo
                                         </a>
-                                    ) : (
-                                        <button
-                                            disabled
-                                            className="flex-1 text-center py-3 rounded-xl bg-slate-700 text-slate-400 cursor-not-allowed"
-                                        >
-                                            Coming Soon
-                                        </button>
                                     )}
 
                                 </div>
